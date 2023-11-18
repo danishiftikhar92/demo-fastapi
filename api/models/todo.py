@@ -1,6 +1,7 @@
-from config.db import Base
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
+
+from api.config.db import Base
 
 class TodoList(Base):
     __tablename__ = "todolist"
